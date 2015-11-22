@@ -31,7 +31,7 @@ namespace MyRegistryClass
 		//void getAllValues(std::vector<MyPair>* vector);
 
 	private:
-		// variables
+		// variables 
 		HKEY key;
 		
 		// methods

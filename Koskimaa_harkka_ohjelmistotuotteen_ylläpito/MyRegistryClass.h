@@ -36,7 +36,5 @@ namespace MyRegistryClass
 		
 		// methods
 		DWORD subKeyType(std::string sKey); // THIS IS A PRIVATE METHOD, HERE (in public methods) BECAUSE TESTING
-
-
 	};
 } // namespace MyRegistryClass

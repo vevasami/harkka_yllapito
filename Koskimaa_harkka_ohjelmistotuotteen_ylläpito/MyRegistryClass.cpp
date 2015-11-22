@@ -161,7 +161,7 @@ lis‰‰ arvon rekisteriin
 */
 void MyRegistryClass::MyRegistryClass::addValue(
 	std::string valueName, 
-	std::string content, )
+	std::string content)
 {
 	int n = 0;
 

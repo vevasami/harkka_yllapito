@@ -5,6 +5,7 @@
 #include "MyRegistryClass.h"
 
 #include <vector>
+#include "MySystemQueryDLL.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -16,7 +17,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	reg->write("hello", 3);
 
-	reg->addValue("teppo", "moro", REG_SZ);
+	reg->addValue("teppo", "moro");
 	std::cout << "numberOfValues: " << reg->numberOfValues() << std::endl;
 	
 	char c;
@@ -29,6 +30,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	
 	std::cout << "> ";
 	std::cin >> c;
+
+	foo();
 
 	reg->closeRegister();
 	return 0;

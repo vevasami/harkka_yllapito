@@ -4,11 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Koskimaa_harkka_ohjelmistotuotteen_ylläpito", "Koskimaa_harkka_ohjelmistotuotteen_ylläpito\Koskimaa_harkka_ohjelmistotuotteen_ylläpito.vcxproj", "{CAECD748-78A3-4A2D-AEC6-5505AB85C545}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DC2C32E-29C3-4104-8193-0911028DA560} = {2DC2C32E-29C3-4104-8193-0911028DA560}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C594AAA9-1206-48BB-B701-167E51530AE1}"
 	ProjectSection(SolutionItems) = preProject
 		OHJEET.txt = OHJEET.txt
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MySystemQueryDLL", "MySystemQueryDLL\MySystemQueryDLL.vcxproj", "{2DC2C32E-29C3-4104-8193-0911028DA560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +25,10 @@ Global
 		{CAECD748-78A3-4A2D-AEC6-5505AB85C545}.Debug|Win32.Build.0 = Debug|Win32
 		{CAECD748-78A3-4A2D-AEC6-5505AB85C545}.Release|Win32.ActiveCfg = Release|Win32
 		{CAECD748-78A3-4A2D-AEC6-5505AB85C545}.Release|Win32.Build.0 = Release|Win32
+		{2DC2C32E-29C3-4104-8193-0911028DA560}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DC2C32E-29C3-4104-8193-0911028DA560}.Debug|Win32.Build.0 = Debug|Win32
+		{2DC2C32E-29C3-4104-8193-0911028DA560}.Release|Win32.ActiveCfg = Release|Win32
+		{2DC2C32E-29C3-4104-8193-0911028DA560}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

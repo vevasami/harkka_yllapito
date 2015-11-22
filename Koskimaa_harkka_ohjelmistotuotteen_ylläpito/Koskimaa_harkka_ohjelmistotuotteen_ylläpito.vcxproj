@@ -77,6 +77,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lang_en.h" />
     <ClInclude Include="MyPair.h" />
     <ClInclude Include="MyRegInfo.h" />
     <ClInclude Include="MyRegistryClass.h" />
@@ -85,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Koskimaa_harkka_ohjelmistotuotteen_ylläpito.cpp" />
+    <ClCompile Include="lang_fin.cpp" />
     <ClCompile Include="MyRegistryClass.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -13,6 +13,9 @@ MyRegistryClass::MyRegistryClass::MyRegistryClass()
 	return;
 }
 
+/**
+avaa rekisterin
+*/
 void MyRegistryClass::MyRegistryClass::openRegister(std::string keyName)
 {
 	int n = 0;
@@ -48,7 +51,7 @@ void MyRegistryClass::MyRegistryClass::write(std::string keyName, std::string va
 /* DWORD ==  unsigned long */
 /**
 	write method for DWORD values
-	*/
+*/
 void MyRegistryClass::MyRegistryClass::write(std::string keyName, DWORD value)
 {
 	int n = 0;
@@ -104,6 +107,9 @@ DWORD MyRegistryClass::MyRegistryClass::subKeyType(std::string sKey)
 	return 42;
 }
 
+/**
+poistaa rekisterist‰ arvon
+*/
 void MyRegistryClass::MyRegistryClass::deleteValue(std::string subkey)
 {
 	int n = RegDeleteValueA(key, (LPCSTR)(subkey.data()));
@@ -120,6 +126,9 @@ void MyRegistryClass::MyRegistryClass::deleteValue(std::string subkey)
 
 }
 
+/**
+laskee rekisterin arvojen m‰‰r‰n
+*/
 DWORD MyRegistryClass::MyRegistryClass::numberOfValues()
 {
 	DWORD numberOfValues = 0;
@@ -147,14 +156,16 @@ DWORD MyRegistryClass::MyRegistryClass::numberOfValues()
 	}
 }
 
+/**
+lis‰‰ arvon rekisteriin
+*/
 void MyRegistryClass::MyRegistryClass::addValue(
 	std::string valueName, 
-	std::string content, 
-	unsigned int type)
+	std::string content, )
 {
 	int n = 0;
 
-	if ((n = RegSetValueExA(key, (LPCSTR)(valueName.data()), 0, type, (const BYTE*)(content.data()), content.size() + 1)) == ERROR_SUCCESS)
+	if ((n = RegSetValueExA(key, (LPCSTR)(valueName.data()), 0, REG_SZ, (const BYTE*)(content.data()), content.size() + 1)) == ERROR_SUCCESS)
 	{
 		std::cout << "successfull creation of: " << valueName << std::endl;
 	}
@@ -164,6 +175,9 @@ void MyRegistryClass::MyRegistryClass::addValue(
 	}
 }
 
+/**
+sulkee rekisterin
+*/
 void MyRegistryClass::MyRegistryClass::closeRegister()
 {
 	RegCloseKey(key);

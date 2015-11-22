@@ -1,4 +1,4 @@
-/*
+/**
 
 käsittelee ja hyödyntää Windows - rekisteriä: 
 - luo ja lukee rekisteri - avaimia ja - arvoja ohjelman käynnistyksen yhteydessä
@@ -26,7 +26,8 @@ namespace MyRegistryClass
 		void closeRegister();
 		void deleteValue(std::string subkey);
 		DWORD numberOfValues();
-		void addValue(std::string name, std::string content, unsigned int type);
+		void addValue(std::string name, std::string content);
+		//void addValue(std::string name, std::string content, unsigned int type);
 		//void getAllValues(std::vector<MyPair>* vector);
 
 	private:
